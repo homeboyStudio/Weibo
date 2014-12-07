@@ -1,0 +1,45 @@
+//
+// Prefix header for all source files of the '新浪微博9.5' target in the '新浪微博9.5' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+#import "Common.h"
+
+#pragma mark 重写这个方法的目的是，去掉父类的默认操作：显示滚动条
+#define kHideScroll - (void)viewDidAppear:(BOOL)animated{ }
+
+
+#define kSourceFont kTimeFont
+
+#define kColor(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0];
+
+//设置tableView的边框高度
+#define kTableBorderWidth  5
+//设置每个cell之间的间距
+#define kCellMargin 8
+
+//设置微博Dock的高度
+#define kStatusDockHeight 30
+
+#define kMBIconWidth 14      //皇冠大小
+#define kMBIconHight 14
+
+#define kCellBorderWidth 10  //边框间距
+#define kScreenNameFont [UIFont systemFontOfSize:13]
+#define kTimeFont [UIFont systemFontOfSize:11]
+#define kSourceFont kTimeFont
+#define kTextFont [UIFont systemFontOfSize:13]
+
+#define kRetweetedScreenNameFont [UIFont systemFontOfSize:13]
+#define kRetweetedTextFont [UIFont systemFontOfSize:13]
+
+#define KColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
